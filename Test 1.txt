@@ -1,0 +1,9 @@
+Test 1
+
+1. What is HTML?
+-> HTML stands for Hypertext Markup Languages & it is used to create webpages.
+
+2. What are HTML Tags?
+-> There are 2 types of tags Paired Tags & Unpaired tags.
+ Paired tags are set of 2 tags with same name. Each paired tag has one opening tag & other is closing tag.
+Unpaired tags are single tag with no closing tags.
