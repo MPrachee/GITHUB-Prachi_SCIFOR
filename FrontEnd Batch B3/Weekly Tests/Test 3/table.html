@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    .table-container {
+            display: flex;
+            justify-content: center;
+        }
+
+    .heading {
+        text-align: center;
+        background-color: #C1CFA1;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid black;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        text-align: center;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: #CEDF9F;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: #A1D6B2;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+</style>
+
+<body>
+    <div class="heading">
+        <h2>Products with their Total Price</h2>
+    </div><br/>
+
+    <div class="table-container">
+    <table class="center">
+        <thead>
+            <tr>
+                <th scope="col"><i>Product Name</i></th>
+                <th scope="col"><i>Price</i></th>
+                <th scope="col"><i>Quantity</i></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Coffee Beater</th>
+                <td>&#8377;199</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Portable Mini Printer</th>
+                <td>&#8377;3,500</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Casual Bagpack</th>
+                <td>&#8377;499</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Wireless Powerbank</th>
+                <td>&#8377;899</td>
+                <td>1</td>
+            </tr>
+        </tb>
+
+        <tfoot>
+            <tr>
+                <th>Total Price: </th>
+                <td>&#8377;6,294</td>
+                <td>7</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
