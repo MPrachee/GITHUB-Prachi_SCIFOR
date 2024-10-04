@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #BC9F8B;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            padding: 16px;
+            background-color: #CADABF;
+        }
+        
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+    
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        
+        .registerbtn {
+            background-color: #9CA986;
+            color: black;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .registerbtn:hover {
+            opacity: 1;
+        }
+        
+        a {
+            color: dodgerblue;
+        }
+        
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <body>
+        <form action="#">
+            <div class="container">
+            <h1>Registration Form</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <label for="name"><b>Name: &nbsp;</b></label>
+            <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+            <br/><br/>
+
+            <label for="Last Name"><b>Last Name: &nbsp;</b></label>
+            <input type="text" placeholder="Enter Your Last Name" name="lname" id="lname" required>
+            <br/><br/>
+        
+            <label for="email"><b>Email: &nbsp;</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <br/><br/>
+        
+            <label for="pwd"><b>Password: &nbsp;</b></label>
+            <input type="password" placeholder="Enter Password" name="pwd" id="pwd" minlength="1"
+            maxlength="8" required>
+            <hr>
+        
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+        
+        <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+        </form>
+</body>
+</html>
