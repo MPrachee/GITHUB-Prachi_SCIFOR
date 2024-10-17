@@ -1,0 +1,52 @@
+ASSIGNMENT-1
+
+1. What is HTML?
+Ans. HTML is Hypertext Markup Language is the code that is used to structure a web page and its content. HTML consists of a series 
+of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. For eg.,
+content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.
+
+2. Are the HTML tags & elements the same thing?
+Ans.  No, Html tags & elements are not the same thing. 
+          HTML Tags are building blocks of HTML page. Tags are enclosed in angle brackets and usually come in pairs.
+
+          HTML Elements are components that are used in HTML page. Elements can contain content, formatting instructions, and semantic 
+          meaning. For eg., a heading, paragraph, or image are all HTML elements. 
+
+3. What are the tags & attributes in HTML?
+Ans. Tags are used to define the structure and meaning of content, while attributes are used to modify the appearance or behavior of 
+         an element. Attributes can also provide additional information that can't be conveyed by the element's content alone. 
+         Eg. of HTML Tags - image tag, paragraph tag, heading tag, link tag i.e. a tag, div
+         Eg . of Attributes - class, src, id, href 
+
+4. What are void elements in HTML?
+Ans. A void element is an element in HTML that cannot have any child nodes i.e. nested elements or text nodes. Void element only have 
+         start tag; end tag must not be specified for void elements. 
+         Eg. of void elements in HTML :- <br>, <hr>, <img>, <input>, <col>
+
+5. What are the features of HTML?
+Ans. The features of HTML are -
+          a) Html is user-friendly & case sensitive
+          b) It is platform-independent
+          c) It is easy to learn & easy to use
+          d) Html is markup language
+          e) Images, videos, & audios can be added to a webpage
+          f) Hypertext can be added to a webpage
+
+6. Difference between HTML vs XHTML.
+Ans. a) HTML stands for HyperText Markup Language whereas XHTML stands for Extensible HyperText Markup Language.
+         b) HTML was developed by Tim Berners Lee whereas XHTML was developed by World Wide Web Consortium.
+         c) It was released in 1993 whereas it was released in 2000.
+         d) It is a document type file format whereas it is a markup language file format.
+         e) HTML is extended from SGML (Standard Generalize Markup Language) whereas it is extended from HTML & 
+              XML (Extensible markup Language).
+         f) It has the file extensions - .html & .htm whereas it has the extensions - .xhtml, .xml, .xht, .htm & .html
+         g) HTML is not case sensitive. It can be written in uppercase or lowercase or a combination of both whereas XHTML is a case sensitive.
+              All the code should be written in lowercase.
+         h) In HTML, it is not necessary to add <!DOCTYPE> at the beginning of everypage whereas In XHTML, it is compulsory to 
+              mention <!DOCTYPE> at the top of every page.
+         i) In HTML, it is not mandatory to close the tags whereas It is mandatory to close all the tags in XHTML.
+         j) While writing attributes in HTML, it is not necessary to mention them in double quotes Eg. :- <color = red> whereas It is necessary 
+             to mention attribute values in quotes Ex :- <color = “red”>
+         k) HTML is less secure whereas XHTML provides more security.
+         l) HTML is supported by all browsers whereas Only few browsers support XHTML.
+         m) It runs code even it consists of an error whereas It strictly checks for all the errors. 
