@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Online Cake Shop</title>
+	<link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href=
+	"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<a href="#" class="logo">Decoding Bakery Store&#8482;</a>
+		<nav class="navbar">
+			<a href="#">Home</a>
+			<a href="#shop">Shop</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<div class="icons">
+			<div id="menu-btn" class="fas fa-bars"></div>
+			<div id="search-btn" class="fas fa-search"></div>
+			<div id="cart-btn" class="fas fa-shopping-cart"></div>
+			<div id="login-btn" class="fas fa-user"></div>
+		</div>
+		<div class="hamburger" id="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</header>
+
+	<section class="home" id="home">
+		<div class="slides-container">
+			<div class="slide active">
+				<div class="content">
+					<span>Order Cakes Online </span>
+					<h3>Upto 80% off</h3>
+					<span>Customize Ordering !!</span>
+					<br/>
+					<a href="#" class="btn">Buy Now</a>
+				</div>
+				
+				<div class="img">
+					<img decoding="async"
+						src="https://images.unsplash.com/photo-1581745069539-1e60d7f965f4?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+						alt="">
+				</div>
+			</div>
+
+		</div>
+		<div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+		<div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+	</section>
+
+	<section class="banner-container">
+
+		<div class="banner">
+			<img decoding="async"
+				src="https://d2j6dbq0eux0bg.cloudfront.net/images/47600040/2858717434.jpg" 
+				alt="">
+			<div class="content">
+				<span>Velvet Cakes</span>
+				<h3>upto 50% off</h3>
+				<a href="#" class="btn">Buy now</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img decoding="async"
+				src="https://i.pinimg.com/736x/1a/46/58/1a465849b320bc265d7484d4e2685600.jpg" 
+				alt="">
+			<div class="content">
+				<span>Marble Cakes</span>
+				<h3>upto 60% off</h3>
+				<a href="#" class="btn">Buy now</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img decoding="async"
+				src="https://kizbeeskitchen.com/wp-content/uploads/Chocolate-Cake-Recipe-017.jpg" 
+				alt="">
+			<div class="content">
+				<span>Chocolate Cakes</span>
+				<h3>upto 50% off</h3>
+				<a href="#" class="btn">Buy now</a>
+			</div>
+		</div>
+
+	</section>
+
+
+	<div class="heading">
+		<h1>The Bakery</h1>
+	</div>
+
+	<section class="category">
+
+		<h1 class="title"> All <span>categories</span> <a href="#">view all >></a> </h1>
+
+		<div class="box-container">
+
+			<a href="#" class="box">
+				<img decoding="async"
+					src="https://hips.hearstapps.com/redonline/main/gallery/3792/23-1372752153-vanilla-cupcakes-with-swirly-icing-mary-berry-s-cookery-course.jpg" 
+					alt="">
+				<h3>Fresh Cupcakes</h3>
+			</a>
+
+			<a href="#" class="box">
+				<img decoding="async"
+					src="https://images.unsplash.com/photo-1583743089695-4b816a340f82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+					alt="">
+				<h3>Cookies</h3>
+			</a>
+
+			<a href="#" class="box">
+				<img decoding="async"
+					src="https://images.unsplash.com/photo-1617996884841-3949eaec3448?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8" 
+					alt="">
+				<h3>Brownies</h3>
+			</a>
+
+			<a href="#" class="box">
+				<img decoding="async"
+					src="https://images.unsplash.com/photo-1527515545081-5db817172677?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" 
+					alt="">
+				<h3>Doughnuts</h3>
+			</a>
+
+			<a href="#" class="box">
+				<img decoding="async"
+					src="https://italianfoodforever.com/wp-content/uploads/2019/01/bomboloni2-480x480.jpg" 
+					alt="">
+				<h3>Bombolini</h3>
+			</a>
+		</div>
+	</section>
+
+
+	<section class="products" id="shop">
+
+		<h1 class="title"> <span> Our Products</span> <a href="#">view all >></a> </h1>
+
+		<div class="box-container">
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="https://images.unsplash.com/photo-1508736375612-66c03035c629?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+						alt="">
+				</div>
+				<div class="content">
+					<h3>Fruit Cakes</h3>
+					<div class="price">Starting &#8377;500</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="https://images.unsplash.com/photo-1506224772180-d75b3efbe9be?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D" 
+						alt="">
+				</div>
+				<div class="content">
+					<h3>Donuts</h3>
+					<div class="price">Starting &#8377;300</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="https://plus.unsplash.com/premium_photo-1671915835768-34183674970a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FrZSUyMHdpdGglMjBmbG93ZXJ8ZW58MHx8MHx8fDA%3D" 
+						alt="">
+				</div>
+				<div class="content">
+					<h3>2-Tier Cakes</h3>
+					<div class="price">Starting &#8377;2500</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="https://media.istockphoto.com/id/1216391799/photo/birthday-cake-whit-blue-anchor.jpg?s=612x612&w=0&k=20&c=b98pDC0x3ME-REV5Wi-lnAMZFjeTwl5at7eyDMLXxC0=" 
+						alt="">
+				</div>
+				<div class="content">
+					<h3>Theme Cakes</h3>
+					<div class="price">Starting &#8377;799</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="https://images.unsplash.com/photo-1567022405855-fc2ce6befe33?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+						alt="">
+				</div>
+				<div class="content">
+					<h3>Chocolate Cupcakes</h3>
+					<div class="price">Starting &#8377;180</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="https://images.unsplash.com/photo-1559373098-e1caaccae791?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlZGRpbmclMjBjYWtlfGVufDB8fDB8fHww" 
+						alt="">
+				</div>
+				<div class="content">
+					<h3>Wedding Cakes</h3>
+					<div class="price">Starting &#8377;2500</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="https://st5.depositphotos.com/32044318/73157/i/450/depositphotos_731573720-stock-photo-delicious-mango-cake-black-background.jpg" 
+						alt="">
+				</div>
+				<div class="content">
+					<h3>Mango Cakes</h3>
+					<div class="price">Starting &#8377;1500</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="data:image/jpeg;base64,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" 
+						alt="">
+				</div>
+				<div class="content">
+					<h3>Bento Cakes</h3>
+					<div class="price">&#8377;600</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="heading">
+		<h2>Cakes Price List</h2>
+	</div>
+
+	<section class="table-price" id="table-list">
+		<div class="table-responsive">
+            <table class="table table-sm table-hover">
+                <thead style="font-size: 2rem; align-items: center;">
+                    <tr>
+                        <th scope="col">Sr. No.</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Price(&#8377;)</th>
+                    </tr>
+                </thead>
+
+                <tbody style="font-size: 1.5rem; align-items: center;">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Chocolate Cake</td>
+                        <td>1/2 kg</td>
+                        <td>&#8377;499</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1 kg</td>
+                        <td>&#8377;875</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Red Velvet Cake</td>
+                        <td>1/2 kg</td>
+                        <td>&#8377;475</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1 kg</td>
+                        <td>&#8377;750</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Mix-Fruit Cake</td>
+                        <td>1/2 kg</td>
+                        <td>&#8377;545</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1 kg</td>
+                        <td>&#8377;1200</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Pineapple Cake</td>
+                        <td>1/2 kg</td>
+                        <td>&#8377;465</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1 kg</td>
+                        <td>&#8377;930</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Mango Cake</td>
+                        <td>1/2 kg</td>
+                        <td>&#8377;599</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1 kg</td>
+                        <td>&#8377;1500</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Any Theme Cake</td>
+                        <td>1/2 kg</td>
+                        <td>&#8377;795</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1 kg</td>
+                        <td>&#8377;1275</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>2-Tier Cake & <br/>
+                        Wedding Cake
+                        </td>
+                        <td> -- </td>
+                        <td>&#8377;2700</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Bento Cake</td>
+                        <td>Mini Cakes OR <br/>
+                            Lunchbox Cakes</td>
+                        <td>&#8377;600</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	</section>
+
+	<div class="heading">
+		<h2>Assorted Packs Price List</h2>
+	</div>
+
+	<section class="assorted-price" id="assorted-pack">
+		<div class="table-responsive">
+            <table class="table table-sm table-hover">
+                <thead style="font-size: 2rem; align-items: center;">
+                    <tr>
+                        <th scope="col">Sr. No.</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Price(&#8377;)</th>
+                    </tr>
+                </thead>
+
+                <tbody style="font-size: 1.5rem; align-items: center;">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Vanilla Cupcake</td>
+                        <td>Pack of 6 pcs</td>
+                        <td>&#8377;170</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Pack of 4 pcs</td>
+                        <td>&#8377;150</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Chocolate Cupcake</td>
+                        <td>Pack of 6 pcs</td>
+                        <td>&#8377;195</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Pack of 4 pcs</td>
+                        <td>&#8377;185</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Brownies</td>
+                        <td>Pack of 9 pcs <br/>
+                        (available only in 9 pcs)
+                        </td>
+                        <td>&#8377;1000</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Cookies</td>
+                        <td>Pack of 12 <br/>
+                        (available only in 12 pcs)
+                        </td>
+                        <td>&#8377;199</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Donuts</td>
+                        <td>Pack of 6</td>
+                        <td>&#8377;350</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Bombolini</td>
+                        <td>Pack of 4</td>
+                        <td>&#8377;450</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	</section>
+
+	<div class="heading">
+		<h1>About us</h1>
+	</div>
+
+	<section class="about" id="about">
+		<div class="img">
+			<img decoding="async"
+				src=
+				"https://plus.unsplash.com/premium_photo-1715080610621-715ff25546ba?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+				alt="">
+		</div>
+
+		<div class=" content">
+			<h3>The Cake Shop</h3>
+			<p>Welcome to Bakery, where every confection tells
+				a story of passion and dedication. Founded by a team of
+				seasoned bakers with a shared love for crafting
+				delectable treats, our bakery embodies a commitment to
+				quality,
+				creativity, and customer satisfaction. From
+				the finest ingredients sourced locally to the meticulous
+				attention
+				to detail in every recipe, we take pride
+				in delivering indulgent experiences that
+				delight taste buds and
+				warm
+				hearts. With each cake, pastry, and dessert,
+				we strive to create moments of joy and celebration, making
+				every
+				occasion a little sweeter.</p>
+			<p>At Bakery, baking isn't just a profession; it's a labor
+				of love that fuels our imagination and drives our
+				pursuit of perfection. With years of experience and
+				a flair for innovation, our talented team brings
+				together
+				traditional techniques and modern flavors to create
+				signature delicacies that are as visually stunning
+				as they
+				are delicious. Whether it's a custom-designed wedding
+				cake, a batch of freshly baked cookies, or a
+				tempting
+				assortment of pastries for a special event, we pour our
+				passion into every creation, ensuring that each
+				bite is
+				a testament to our dedication to excellence. Join us on a
+				journey of culinary delights, where every bite
+				is a
+				taste of our unwavering commitment to baking brilliance.</p>
+			<a href="#" class="btn">read more</a>
+		</div>
+	</section>
+
+	<div class="heading">
+		<h1>Contact us</h1>
+	</div>
+
+	<section class="contact" id="contact">
+		<div class="icons-container">
+
+			<div class="icons">
+				<i class="fas fa-phone"></i>
+				<h3>Contact Number</h3>
+				<p>+91 xxxx xxx xxx</p>
+				<p>+91 xxxx xxx xxx</p>
+			</div>
+
+			<div class="icons">
+				<i class="fas fa-envelope"></i>
+				<h3>Email</h3>
+				<p>xxxxxxxxxxx@gmail.com</p>
+				<p>xyzabc@gmail.com</p>
+			</div>
+
+			<div class="icons">
+				<i class="fas fa-map-marker-alt"></i>
+				<h3>Address</h3>
+				<p>India</p>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<form action="">
+				<h3>Get in Touch</h3>
+				<div class="inputBox">
+					<input type="text" 
+					placeholder="Enter Your Name" 
+					class="box" />
+					<input type="text" 
+					placeholder="Enter Your email" 
+					class="box"/>
+				</div>
+				<div class="inputBox">
+					<input type="number"
+						placeholder="Enter Your Number" 
+						class="box">
+					<input type="text"
+						placeholder="Enter Your Subject" 
+						class="box">
+				</div>
+				<textarea type="text" 
+				placeholder="Write Your Message" 
+				cols="30" rows="10"></textarea>
+				<input type="submit" 
+				value="send message" 
+				class="btn">
+			</form>
+		</div>
+
+	</section>
+
+	<div class="space"></div>
+
+	<section class="footer">
+		<div class="box-container">
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#"> <i class="fas 
+				fa-arrow-right"></i> Home</a>
+				<a href="#"> <i class="fas
+				fa-arrow-right"></i>Shop</a>
+				<a href="#"> <i class="fas
+				fa-arrow-right"></i>About</a>
+				<a href="#"> <i class="fas
+				fa-arrow-right"></i> Review</a>
+				<a href="#"> <i class="fas 
+				fa-arrow-right"></i>Blog</a>
+				<a href="#"> <i class="fas
+				fa-arrow-right"></i>Contact</a>
+			</div>
+
+			<div class="box">
+				<h3>Follow us</h3>
+				<a href="#"> <i class="fab 
+				fa-facebook-f"></i> Facebook </a>
+				<a href="#"> <i class="fab
+				fa-twitter"></i> Twitter </a>
+				<a href="#"> <i class="fab 
+				fa-instagram"></i> Instagram </a>
+				<a href="#"> <i class="fab
+				fa-linkedin"></i> Linkedin </a>
+				<a href="#"> <i class="fab 
+				fa-pinterest"></i> Pinterest </a>
+			</div>
+
+			<div class="box">
+				<h3>Newsletter</h3>
+				<p>Don't miss any Offer</p>
+				<form action="">
+					<input type="email" placeholder="Your e-mail"><br/>
+					<input type="submit" value="Subscribe" class="btn">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="credit">Created by <span>@Prachi</span></section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
