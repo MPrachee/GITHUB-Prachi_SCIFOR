@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Component</title>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.min.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+  
+  <script type="text/babel">
+    class MyComponent extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          name: 'Noah',
+          lname: 'Smith',
+          age: 18
+        };
+      }
+
+      handleChange = () => {
+        this.setState({
+          name: 'Prachi',
+          lname: 'Meher',
+          age: 25
+        });
+      }
+
+      render() {
+        return (
+          <div>
+            <h1>Change the state by clicking on button</h1>
+
+            <div>
+              <p>Name: {this.state.name}</p>
+              <p>Last Name: {this.state.lname}</p>
+              <p>Age: {this.state.age}</p>
+
+            <button onClick={this.handleChange}>
+              Change the state
+            </button>
+            </div>
+
+          </div>
+        );
+      }
+    }
+
+    ReactDOM.render(<MyComponent />, document.getElementById('root'));
+  </script>
+</body>
+</html>
