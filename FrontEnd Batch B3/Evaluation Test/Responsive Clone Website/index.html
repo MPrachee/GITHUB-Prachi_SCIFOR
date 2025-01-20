@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/image.png">
+
+    <title>Godwit Technologies</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mainNavbar">
+      <div class="container-fluid">
+
+        <!-- Company Logo -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/company-Logo.png"
+            alt="Company Logo"
+            class="companyImage"/>
+        </a>
+
+        <!-- Hamburger Menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 allTags">
+            <li class="nav-item">
+              <a class="nav-link active home" aria-current="page" href="#">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#solutions">Solutions</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>            
+
+            <li class="nav-item">
+              <a class="nav-link" href="#training">Training</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr class="hrLine" />
+
+    <!-- Slide Images -->
+    <div class="carsoual-container">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img
+              src="./images/slide-1.jpg" class="d-block w-100" alt=""/>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./images/slide-2.png" class="d-block w-100" alt="" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./images/slide-3.jpg" class="d-block w-100" alt="" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./images/slide-4.jpg" class="d-block w-100" alt="" />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev">
+
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next">
+
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <br/>
+    <br/><br/>
+
+    <!-- About Us -->
+    <div class="aboutUs-container" id="aboutus">
+      <div class="title">
+        <h4 style="color: #555555;">About Us</h4>
+        <hr style="color: #07ABEF;" />
+      </div>
+      <br/>
+
+      <div class="welcome-title">
+        <h3 style="color: #555555;">Welcome To Godwit Technology</h3>
+      </div>
+
+      <div class="para">
+        <p style="color: #444444;">
+          Since our start we keep the pioneer in all the fields of the network
+          and earn the trust significantly through our successful R & D works
+          and projects services throughout the world. We believe in our
+          dedications for making the successful career of our client and hence
+          always standing on same.
+        </p>
+      </div>
+
+      <button class="btn">READ MORE</button>
+    </div>
+
+    <!-- Services -->
+    <div class="services-container" id="services">
+      <div class="title">
+        <h4 style="color: #555555; font-size: 28px;">Our Services</h4>
+        <hr style="color: #07ABEF;" />
+      </div>
+
+      <div class="welcome-title">
+        <h3 style="color: #444444; font-size: 20px;">SEE WHAT WE OFFER</h3>
+      </div>
+
+      <div class="card-container">
+        <div class="service-card">
+
+          <i class="fa fa-barcode" 
+            style="font-size: 30px; height: 80px; width: 80px; text-align: center;
+            line-height: 80px; border-radius: 50%; background-color: #07ABEF; 
+            color: #FFFFFF; display: inline-block; border: 2px solid #07ABEF; 
+            transition: 0.5s ease 0s;"></i>
+
+            <h3 style="font-size: 18px; color: #555555;">
+              Commercial Solutions
+            </h3>
+            <p style="font-size: 14px; color: #666666;">
+            Our commercial solution are according our customer requirements
+            right from ERP/CRM solution to website domain registration &
+            hosting. Following are the solutions which we..
+            </p>
+          <button class="btn">READ MORE</button>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-eye"
+            style="font-size: 30px; height: 80px; width: 80px; text-align: center;
+            line-height: 80px; border-radius: 50%; background-color: #07ABEF; 
+            color: #FFFFFF; display: inline-block; border: 2px solid #07ABEF; 
+            transition: 0.5s ease 0s;"></i>
+            
+            <h3 style="font-size: 18px; color: #555555;">
+              Research Papers & Thesis Writing
+            </h3>
+            <p style="font-size: 14px; color: #666666;">
+            We are mostly work on running research papers & thesis over various
+            fields & get them publish from top ranked National & International
+            journals like IEEE
+            </p>
+          <button class="btn">READ MORE</button>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-th-list"
+            style="font-size: 30px; height: 80px; width: 80px; text-align: center;
+            line-height: 80px; border-radius: 50%; background-color: #07ABEF; 
+            color: #FFFFFF; display: inline-block; border: 2px solid #07ABEF; 
+            transition: 0.5s ease 0s;"></i>
+            
+            <h3 style="font-size: 18px; color: #555555;">
+              IEEE Paper Guidance & Publications
+            </h3>
+            <p style="font-size: 14px; color: #666666;">
+            IJEETR publishes original and review papers, technical reports, case
+            studies, conference reports, management reports, book reviews, and
+            notes commentaries and news.
+            </p>
+          <button class="btn">READ MORE</button>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-trophy"
+            style="font-size: 30px; height: 80px; width: 80px; text-align: center;
+            line-height: 80px; border-radius: 50%; background-color: #07ABEF; 
+            color: #FFFFFF; display: inline-block; border: 2px solid #07ABEF; 
+            transition: 0.5s ease 0s;"></i>
+
+            <h3 style="font-size: 18px; color: #555555;">
+              Educational Solutions
+            </h3>
+          <p style="font-size: 14px; color: #666666;">
+            This is all about final year projects work, training and assistance
+            across the world. The students from P.hd, M.S, M.Sc, M.Tech, M.E,
+            B.E, B.Tech, MBA etc. are considered. Following are the solutions
+            which...
+          </p>
+          <button class="btn">READ MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solutions -->
+    <div class="solutions-container" id="solutions">
+      <div class="title">
+        <h4 style="font-size: 30px; color: #555555;">
+          Solutions
+        </h4>
+        <hr style="color: #07ABEF;" />
+      </div>
+
+      <div class="solution-container">
+        <div class="solution-card">
+          <h2 style="font-size: 28px; color: #555555;">
+            Commercial Solutions
+          </h2>
+          <p style="font-size: 17px; color: #444444;">
+            Our commercial solution are according our customer requirements
+            right from ERP/CRM solution to website domain registration &
+            hosting. Following are the solutions which we..
+          </p>
+        </div>
+
+        <div class="solution-card">
+          <h2 style="font-size: 28px; color: #555555;">
+            Research Papers & Thesis Writing
+          </h2>
+          <p style="font-size: 17px; color: #444444;">
+            We are mostly work on running research papers & thesis over various
+            fields & get them publish from top ranked National & International
+            journals like IEEE
+          </p>
+        </div>
+
+        <div class="solution-card">
+          <h2 style="font-size: 28px; color: #555555;">
+            IEEE Paper Guidance & Publications
+          </h2>
+          <p style="font-size: 17px; color: #444444;">
+            IJEETR publishes original and review papers, technical reports, case
+            studies, conference reports, management reports, book reviews, and
+            notes commentaries and news.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events -->
+    <div class="events-container" id="events">
+      <div class="title">
+        <h3 style="color: #555555; font-size: 30px;">
+          Our Events
+        </h3>
+        <hr style="color: #07ABEF;" />
+      </div>
+
+      <div class="para">
+        <p style="font-size: 17px; color: #444444; text-align: justify; margin-bottom: 18px;">
+          For each year, we have events for the big celebrations.On those
+          occasions, different activities such games, drama's, singing
+          competitions, and many more are conducted by all team members and
+          together enjoying the moments. Following are the companies two big
+          events celebrating every year:
+        </p>
+      </div>
+
+      <div class="events-heading">
+        <h4 style="font-size: 20px; color: #555555; line-height: 1.3; font-weight: 600; 
+        margin-bottom: 15px;">
+          11 September: Anniversary of HERANI Radical.
+        </h4>
+        <h4 style="font-size: 20px; color: #555555; line-height: 1.3; font-weight: 600; 
+        margin-bottom: 15px;">
+          28 February: Anniversary of Godwit Technologies.
+        </h4>
+      </div>
+
+      <div class="para">
+        <p style="font-size: 17px; color: #444444; text-align: center;">
+          On this events, apart from this activities performance reviews,
+          reports, appraisals are declared.
+        </p>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div id="testimonial">
+      <h1>Testimonials</h1>
+      <p>what people say about us</p>
+
+      <div class="review-box">
+          <div class="review">
+              <p>Global Tech Networking helped me design my website in a quick and 
+              efficient manner. Whenever I had a question, I always received an answer that 
+              day or the next. Global Tech Networking made designing my website straightforward 
+              and ..</p>
+              <!-- <div class="name">Ali Shan Naeem, CEO <br /> TicketsMove.com</div> -->
+          </div>
+
+          <div class="review">
+              <p>A new method of data compression could see ultra-high 
+              definition video - also known as 4K - being streamed to TVs and other devices 
+              using around 50% of the bandwidth currently needed.V-Nova has gathered 20 
+              large telecoms..</p>
+              <!-- <div class="name">Scarlet lavigne</div> -->
+          </div>
+
+          <div class="review">
+            <p>"On time work, as I(Rajesh Nitnvare) was responsible for 
+              this big management work, got good and quality support from my freind Hemant 
+              and his team members, thanks to all of this young and dyanamic team"</p>            
+              <!-- <div class="name">Ambedkar Pune-Mumbai Festival <br> Group</div> -->
+          </div>
+      </div>
+    </div>
+
+    <!-- Company Info -->
+    <section class="company-info" id="contactus">
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <h5>Aundh, Pune 411007</h5>
+      </div>
+
+      <div class="call">
+        <i class="fa fa-phone"></i>
+        <h5>+91 9272150171 / +91 8805494880</h5>
+      </div>
+
+      <div class="address">
+        <i class="fa fa-envelope"></i>
+        <h5>info@godwittech.com</h5>
+      </div>
+    </section>
+
+    <!-- Footer Links -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Links</h4>
+
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right"></i>
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#aboutus"><i class="fa-solid fa-angle-right"></i>
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="#services"><i class="fa-solid fa-angle-right"></i>
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="#solutions"><i class="fa-solid fa-angle-right"></i>
+                Solutions
+              </a>
+            </li>
+
+            <li>
+              <a href="#events"><i class="fa-solid fa-angle-right"></i>
+                Events
+              </a>
+            </li>
+
+            <li>
+              <a href="#training"><i class="fa-solid fa-angle-right"></i>
+                Training
+              </a>
+            </li>
+
+            <li>
+              <a href="#contactus"><i class="fa-solid fa-angle-right"></i>
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Address -->
+        <div class="footer-section">
+          <h4>Address</h4>
+          <ul>
+            <li style="font-size: 17px; color: #FFFFFF;">
+              Office Address:
+            </li>
+            <li>
+              <i>Fortuna Plaza, Office No 704, Opp. Rainbow Plaza, Pimple
+                Saudagar, Pune – 411027 Mumbai, Jaipur address as well</i>
+              </li>
+
+              <li style="font-size: 17px; color: #FFFFFF;">
+                Contact Details:
+              </li>
+            <li>
+              Land Line: 020-25896451 Mobile : Mr.Raj: 09272150171 / 08805494880
+            </li>
+
+            <li style="font-size: 17px; color: #FFFFFF;">
+              Email:
+            </li>
+            <li>
+              Information, Enquiries, Suggestions: info@godwittech.com Technical : 
+              tech@godwittech.com
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Google Map -->
+        <div class="footer-section">
+          <h4 style="font-size: 19px; color: #FFFFFF;">
+            GOOGLE MAP
+          </h4>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27150.393324246823!2d73.7899563363273!3d19.955133101363092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd95331134fce7%3A0xd318c776f24a83fe!2sGandhi%20Nagar%20Airport%20Area%2C%20Deolali%20Gaon%2C%20Nashik%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1737032408559!5m2!1sen!2sin"
+            width="300"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Footer Contact Form -->
+        <div class="footer-section">
+          <h4 style="font-size: 19px; color: #FFFFFF;">
+            GET IN TOUCH
+          </h4>
+
+          <div class="footer-socials">
+            <form action="#">
+              <input 
+              type="text" 
+              name="name" 
+              id="" 
+              placeholder="Name" />
+
+              <input 
+              type="email" 
+              name="email" 
+              id="" 
+              placeholder="Email Id" />
+
+              <input 
+              type="number" 
+              name="number" 
+              id="" 
+              placeholder="Mobile No." />
+
+              <input 
+              type="text" 
+              name="subject" 
+              id="" 
+              placeholder="Subject" />
+
+              <input
+              type="text"
+              name="message"
+              id=""
+              placeholder="Your Message"/>
+              <br /><br />
+
+              <button>SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          <a href="#">Godwit Technologies</a>
+          © 2016
+        </p>
+
+        <div class="footer-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google-plus-g"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scrollTopBtn">↑ TOP</button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+      <script src="script.js"></script>
+  </body>
+</html>
