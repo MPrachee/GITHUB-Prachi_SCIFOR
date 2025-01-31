@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App in Redux</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/8.1.2/react-redux.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.22.9/babel.min.js"></script>
+</head>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { createStore } = Redux;
+        const { Provider, useSelector, useDispatch } = ReactRedux;
+
+        // Redux Actions
+        const increment = () => ({ type: 'INCREMENT' });
+        const decrement = () => ({ type: 'DECREMENT' });
+
+        // Redux Reducer
+        const counterReducer = (state = 0, action) => {
+            switch (action.type) {
+                case 'INCREMENT':
+                    return state + 1;
+
+                    case 'DECREMENT':
+                    return state - 1;
+
+                    default:
+                    return state;
+            }
+        };
+
+        // Redux Store
+        const store = createStore(counterReducer);
+
+        function CounterApp() {
+            const count = useSelector((state) => state);
+            const dispatch = useDispatch();
+
+            return (
+                <div style={{ textAlign: "center", marginTop: "50px" }}>
+                    <h1>Counter App with Redux</h1>
+                    <h2>Count: {count}</h2>
+
+                    <button onClick={() => dispatch(increment())}>Increment</button>
+                    &nbsp;
+                    <button onClick={() => dispatch(decrement())}>Decrement</button>
+                </div>
+            );
+        }
+
+        function App() {
+            return (
+                <Provider store={store}>
+                    <CounterApp />
+                </Provider>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+    </script>
+</body>
+</html>
